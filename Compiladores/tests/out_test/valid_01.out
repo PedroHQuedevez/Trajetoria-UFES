@@ -1,0 +1,215 @@
+Strings table:
+Entry 0 -- "Erro: Divisão por zero!"
+
+
+Global symbol table:
+Entry 0 -- name: x, kind: VARIABLE, line: 4, type: real
+Entry 1 -- name: y, kind: VARIABLE, line: 4, type: real
+Entry 2 -- name: a, kind: VARIABLE, line: 4, type: real
+Entry 3 -- name: z, kind: VARIABLE, line: 4, type: real
+Entry 4 -- name: Multiplicar, kind: FUNCTION, line: 8, type: real
+  Params: a:real b:real 
+  Local variables:
+    Multiplicar : real
+    a : real
+    b : real
+    resultado : real
+Entry 5 -- name: Dividir, kind: FUNCTION, line: 16, type: real
+  Params: a:real b:real 
+  Local variables:
+    Dividir : real
+    a : real
+    b : real
+    resultado : real
+
+
+digraph {
+graph [ordering="out"];
+node0[label="program"];
+node1[label="var_list"];
+node2[label="(real) x@"];
+node1 -> node2;
+node3[label="(real) y@"];
+node1 -> node3;
+node4[label="(real) a@"];
+node1 -> node4;
+node5[label="(real) z@"];
+node1 -> node5;
+node0 -> node1;
+node6[label="function_sect"];
+node7[label="(real) function_decl"];
+node8[label="(real) function_heading"];
+node9[label="(real) Multiplicar@"];
+node8 -> node9;
+node10[label="param_list"];
+node11[label="(real) a@"];
+node10 -> node11;
+node12[label="(real) b@"];
+node10 -> node12;
+node8 -> node10;
+node7 -> node8;
+node13[label="var_list"];
+node14[label="(real) resultado@"];
+node13 -> node14;
+node7 -> node13;
+node15[label="function_block"];
+node16[label="(real) :="];
+node17[label="(real) resultado@"];
+node16 -> node17;
+node18[label="(real) *"];
+node19[label="(real) a@"];
+node18 -> node19;
+node20[label="(real) b@"];
+node18 -> node20;
+node16 -> node18;
+node15 -> node16;
+node21[label="(real) :="];
+node22[label="(real) Multiplicar@"];
+node21 -> node22;
+node23[label="(real) resultado@"];
+node21 -> node23;
+node15 -> node21;
+node7 -> node15;
+node6 -> node7;
+node24[label="(real) function_decl"];
+node25[label="(real) function_heading"];
+node26[label="(real) Dividir@"];
+node25 -> node26;
+node27[label="param_list"];
+node28[label="(real) a@"];
+node27 -> node28;
+node29[label="(real) b@"];
+node27 -> node29;
+node25 -> node27;
+node24 -> node25;
+node30[label="var_list"];
+node31[label="(real) resultado@"];
+node30 -> node31;
+node24 -> node30;
+node32[label="function_block"];
+node33[label="if"];
+node34[label="(boolean) <>"];
+node35[label="(real) b@"];
+node34 -> node35;
+node36[label="(integer)  0"];
+node34 -> node36;
+node33 -> node34;
+node37[label="(real) :="];
+node38[label="(real) resultado@"];
+node37 -> node38;
+node39[label="(real) /"];
+node40[label="(real) a@"];
+node39 -> node40;
+node41[label="(real) b@"];
+node39 -> node41;
+node37 -> node39;
+node33 -> node37;
+node42[label="structure_stmt"];
+node43[label="write"];
+node44[label="(string)  \"Erro: Divisão por zero!\""];
+node43 -> node44;
+node42 -> node43;
+node45[label="(real) :="];
+node46[label="(real) resultado@"];
+node45 -> node46;
+node47[label="(real) I2R"];
+node48[label="(integer)  0"];
+node47 -> node48;
+node45 -> node47;
+node42 -> node45;
+node33 -> node42;
+node32 -> node33;
+node49[label="(real) :="];
+node50[label="(real) Dividir@"];
+node49 -> node50;
+node51[label="(real) resultado@"];
+node49 -> node51;
+node32 -> node49;
+node24 -> node32;
+node6 -> node24;
+node0 -> node6;
+node52[label="block"];
+node53[label="(real) :="];
+node54[label="(real) x@"];
+node53 -> node54;
+node55[label="(real) I2R"];
+node56[label="(integer)  2"];
+node55 -> node56;
+node53 -> node55;
+node52 -> node53;
+node57[label="(real) :="];
+node58[label="(real) y@"];
+node57 -> node58;
+node59[label="(real) I2R"];
+node60[label="(integer)  3"];
+node59 -> node60;
+node57 -> node59;
+node52 -> node57;
+node61[label="(real) :="];
+node62[label="(real) a@"];
+node61 -> node62;
+node63[label="(real) function_call"];
+node64[label="(real) Multiplicar@"];
+node63 -> node64;
+node65[label="expr_list"];
+node66[label="(real) x@"];
+node65 -> node66;
+node67[label="(real) y@"];
+node65 -> node67;
+node63 -> node65;
+node61 -> node63;
+node52 -> node61;
+node68[label="write"];
+node69[label="(string) R2S"];
+node70[label="(real) a@"];
+node69 -> node70;
+node68 -> node69;
+node52 -> node68;
+node0 -> node52;
+}
+
+=== EXECUTANDO O PROGRAMA ===
+
+6.0
+
+=== GERANDO CÓDIGO JASMIN ===
+
+Código Jasmin gerado com sucesso em: ../tests/in/valid_01.j
+
+=== CÓDIGO JASMIN GERADO ===
+
+.class public PascalProgram
+.super java/lang/Object
+
+.method public <init>()V
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+.end method
+
+.method public static main([Ljava/lang/String;)V
+  .limit stack 10
+  .limit locals 10
+  fconst_0
+  fstore 2
+  fconst_0
+  fstore 0
+  fconst_0
+  fstore 1
+  fconst_0
+  fstore 3
+  iconst_2
+  i2f
+  fstore 0
+  iconst_3
+  i2f
+  fstore 1
+  iconst_0
+  fstore 2
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  fload 2
+  invokestatic java/lang/String/valueOf(F)Ljava/lang/String;
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  return
+.end method
+

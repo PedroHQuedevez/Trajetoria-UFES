@@ -1,0 +1,123 @@
+Utilizei o shuffle em todos os casos pois o tempo sem ele era extremamente alto para
+realizar os testes ou resultava em um seg fault.
+
+//--------------------------------------------------------------------------------
+quick_sort_1
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 253 milissegundos
+Arquivo: ../input/nearly_sorted/10000000.txt Tempo: 3120 milissegundos
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 254 milissegundos
+Arquivo: ../input/reverse_sorted/10000000.txt Tempo: 3128 milissegundos
+Arquivo: ../input/sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 251 milissegundos
+Arquivo: ../input/sorted/10000000.txt Tempo: 251 milissegundos
+Arquivo: ../input/unif_rand/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 250 milissegundos
+Arquivo: ../input/unif_rand/10000000.txt Tempo: 3127 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_sorted.txt Tempo: 1781 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_unif_rand.txt Tempo: 1770 milissegundos
+//--------------------------------------------------------------------------------
+quick_sort_2
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 256 milissegundos
+Arquivo: ../input/nearly_sorted/10000000.txt Tempo: 3112 milissegundos
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 252 milissegundos
+Arquivo: ../input/reverse_sorted/10000000.txt Tempo: 3109 milissegundos
+Arquivo: ../input/sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 254 milissegundos
+Arquivo: ../input/sorted/10000000.txt Tempo: 250 milissegundos
+Arquivo: ../input/unif_rand/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 252 milissegundos
+Arquivo: ../input/unif_rand/10000000.txt Tempo: 3107 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_sorted.txt Tempo: 1788 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_unif_rand.txt Tempo: 1799 milissegundos
+//--------------------------------------------------------------------------------
+quick_sort_3
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 253 milissegundos
+Arquivo: ../input/nearly_sorted/10000000.txt Tempo: 3110 milissegundos
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 252 milissegundos
+Arquivo: ../input/reverse_sorted/10000000.txt Tempo: 3096 milissegundos
+Arquivo: ../input/sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 252 milissegundos
+Arquivo: ../input/sorted/10000000.txt Tempo: 252 milissegundos
+Arquivo: ../input/unif_rand/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 251 milissegundos
+Arquivo: ../input/unif_rand/10000000.txt Tempo: 3180 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_sorted.txt Tempo: 1799 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_unif_rand.txt Tempo: 1791 milissegundos
+//--------------------------------------------------------------------------------
+quick_sort_4
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 251 milissegundos
+Arquivo: ../input/nearly_sorted/10000000.txt Tempo: 3099 milissegundos
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 256 milissegundos
+Arquivo: ../input/reverse_sorted/10000000.txt Tempo: 3110 milissegundos
+Arquivo: ../input/sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 252 milissegundos
+Arquivo: ../input/sorted/10000000.txt Tempo: 251 milissegundos
+Arquivo: ../input/unif_rand/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 255 milissegundos
+Arquivo: ../input/unif_rand/10000000.txt Tempo: 3115 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_sorted.txt Tempo: 1812 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_unif_rand.txt Tempo: 1785 milissegundos
+//--------------------------------------------------------------------------------
+quick_sort_5
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 24 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 294 milissegundos
+Arquivo: ../input/nearly_sorted/10000000.txt Tempo: 3613 milissegundos
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 25 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 287 milissegundos
+Arquivo: ../input/reverse_sorted/10000000.txt Tempo: 3494 milissegundos
+Arquivo: ../input/sorted/100000.txt Tempo: 24 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 290 milissegundos
+Arquivo: ../input/sorted/10000000.txt Tempo: 290 milissegundos
+Arquivo: ../input/unif_rand/100000.txt Tempo: 24 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 285 milissegundos
+Arquivo: ../input/unif_rand/10000000.txt Tempo: 3468 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_sorted.txt Tempo: 2094 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_unif_rand.txt Tempo: 2088 milissegundos
+//--------------------------------------------------------------------------------
+quick_sort_6
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 250 milissegundos
+Arquivo: ../input/nearly_sorted/10000000.txt Tempo: 3114 milissegundos
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 22 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 252 milissegundos
+Arquivo: ../input/reverse_sorted/10000000.txt Tempo: 3110 milissegundos
+Arquivo: ../input/sorted/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 252 milissegundos
+Arquivo: ../input/sorted/10000000.txt Tempo: 251 milissegundos
+Arquivo: ../input/unif_rand/100000.txt Tempo: 21 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 255 milissegundos
+Arquivo: ../input/unif_rand/10000000.txt Tempo: 3131 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_sorted.txt Tempo: 1949 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_unif_rand.txt Tempo: 1865 milissegundos
+//--------------------------------------------------------------------------------
+quick_sort_3_way
+Arquivo: ../input/unif_rand/10000000.txt Tempo: 3137 milissegundos
+Arquivo: ../input/few_uniq/10M_const_keys_unif_rand.txt Tempo: 1786 milissegundos
+//--------------------------------------------------------------------------------
+
+As médias dos tempos para cada versão do Quick Sort são:
+quick_sort_1: 1019,21 ms
+quick_sort_2: 1018,79 ms
+quick_sort_3: 1022,86 ms
+quick_sort_4: 1019,29 ms
+quick_sort_5: 1164,29 ms
+quick_sort_6: 1036,71 ms
+
+Com base nos resultados, percebemos uma leve diferença entre os 4 primeiros algoritmos,sendo o quick sort somente com a adição de cuttoff
+apresenta um desempenho ligeiramente melhor em média em relação aos demais.
+
+O merge sorte possui tempos melhores que o quick sort, porém não é inplace o que significa um uso maior de memória, pode representar um 
+problema para casos maiores. Para casos que necessitam de muita memória, o quick sort pode ser mais atrativo, e para maiores, o merge.
+O melhor algoritmo depende da situação que serão empregados.
+
+Para o quick_sort_3_Way a execução dos dois arquivos apresentaram uma grande diferença de tempo, isso se deve ao fato de que para o 
+segundo arquivo, de chaves de 00 a 99, o código não faz trocas quando compara chaves repetidas, apenas incrementa o valorde i para 
+passar para a próxima iteração, fazendo menos trocas.

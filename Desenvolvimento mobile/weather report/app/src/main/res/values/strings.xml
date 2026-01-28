@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">weather_report</string>
+    <string name="title"> Previsão legal</string>
+    <string name="edit_text1"> Digite o nome da Cidade </string>
+    <string name="previsao"> Previsão </string>
+    <string name="report"> Relatório de previsão </string>
+</resources>

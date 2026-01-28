@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:src="@drawable/weather_svgrepo_com"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+    />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        android:text="@string/title"
+        android:layout_marginTop="20dp"
+        android:textSize="28sp"
+        android:textColor="@color/md_theme_secondary_mediumContrast"
+        />
+
+    <EditText
+        android:id="@+id/editCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/edit_text1"
+        android:textSize="25sp"
+        android:textColor="@color/md_theme_primary_mediumContrast"
+        android:layout_marginTop="180dp"
+        />
+
+    <Button
+        android:id="@+id/buttom_previsao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editCityName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/previsao"
+        android:textSize="25sp"
+        android:textColor="@color/md_theme_primary_highContrast"
+        android:layout_marginTop="220dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202103664934",
+    "project_id": "pokeapp-485fd",
+    "storage_bucket": "pokeapp-485fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202103664934:android:d58ccf8b20f3295aeb51e7",
+        "android_client_info": {
+          "package_name": "com.example.pokestats"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGPPEeEe9vDrY7lyJdIjVjcQdY2x2XLZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

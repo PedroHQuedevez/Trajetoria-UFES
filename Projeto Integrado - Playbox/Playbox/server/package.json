@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --testTimeout=10000",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --watchAll=false",
+    "test:ci": "jest --ci --coverage --watchAll=false --testTimeout=10000",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "docs": "jsdoc -c jsdoc.conf.json",
+    "docs:watch": "nodemon --watch . --ext js --exec \"npm run docs\"",
+    "docs:serve": "npm run docs && cd docs && python3 -m http.server 8080"
+  },
+  "keywords": [],
+  "author": "Renan Campista, Artur Mendes de Moraes, Pedro Henrique Queiroz",
+  "license": "MIT",
+  "description": "Plataforma web de avaliação de jogos - Backend",
+  "dependencies": {
+    "@prisma/client": "^6.11.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.1.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^6.11.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.4",
+    "nodemon": "^3.1.10",
+    "supertest": "^6.3.3"
+  }
+}

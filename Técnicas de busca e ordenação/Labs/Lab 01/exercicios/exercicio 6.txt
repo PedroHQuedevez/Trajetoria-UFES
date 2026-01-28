@@ -1,0 +1,12 @@
+Resultados de tempo de execução (em segundos) para os algoritmos de caminhamento
+(versões recursivas e não-recursivas) para N = 10^7.
+
+Type        	Rec     	Iter
+Pre-order   	1.066965	1.504291
+In-order    	1.093486	1.404253
+Post-order  	1.112476	1.793761
+
+Observando os resultados podemos ver que a versão recursiva é mais eficiente neste
+caso, apesar de terem a mesma complexidade, as versões iterativas utilizam estruturas
+auxiliares como pilhas e filas internamente, realizam mais acessos a memória, mais 
+condicionais ou loops, tudo isso influencia no tempo de execução total do algoritimo.

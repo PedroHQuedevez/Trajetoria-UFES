@@ -1,0 +1,28 @@
+ITER    HEIGHT
+0       50
+1       49
+2       51
+3       49
+4       48
+5       53
+6       48
+7       52
+8       51
+9       51
+AVG     50,2
+STD     1,6
+
+Ex.2
+1)A partir do desvio padrão podemos observar que as alturas variam em um
+pequeno interavalo, sendo assim o comportamento da árvore seguiu um padrão
+e não se degenerou completamente.
+
+2)A altura máxima seria no caso de todos os números ficarem a esquerda ou a direita
+um dos outros, oque tornaria a árvore uma lista encadiada. Altura 10^6 -1.
+
+3)Sendo a altura máxima de uma arvore perfeitamente balanceada é de h=log(n+1)−1,
+sendo log na base 2, que para 10^6 entradas nos daria 20 de altura máxima quando
+perfeitamente balanceada, nesse caso a altura media foi muito maior do que seria
+considerado perfeito, mas não ruim ao ponto de serem os piores casos.
+
+

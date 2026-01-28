@@ -1,0 +1,54 @@
+Strings table:
+Entry 0 -- "Olá, mundo!"
+
+
+Global symbol table:
+Entry 0 -- name: msg, kind: VARIABLE, line: 4, type: string
+Entry 1 -- name: Mensagem, kind: FUNCTION, line: 6, type: string
+  Params: 
+  Local variables:
+    Mensagem : string
+
+
+digraph {
+graph [ordering="out"];
+node0[label="program"];
+node1[label="var_list"];
+node2[label="(string) msg@"];
+node1 -> node2;
+node0 -> node1;
+node3[label="function_sect"];
+node4[label="(string) function_decl"];
+node5[label="(string) function_heading"];
+node6[label="(string) Mensagem@"];
+node5 -> node6;
+node4 -> node5;
+node7[label="function_block"];
+node8[label="(string) :="];
+node9[label="(string) Mensagem@"];
+node8 -> node9;
+node10[label="(string)  \"Olá, mundo!\""];
+node8 -> node10;
+node7 -> node8;
+node4 -> node7;
+node3 -> node4;
+node0 -> node3;
+node11[label="block"];
+node12[label="(string) :="];
+node13[label="(string) msg@"];
+node12 -> node13;
+node14[label="(string) function_call"];
+node15[label="(string) Mensagem@"];
+node14 -> node15;
+node12 -> node14;
+node11 -> node12;
+node16[label="write"];
+node17[label="(string) msg@"];
+node16 -> node17;
+node11 -> node16;
+node0 -> node11;
+}
+
+=== EXECUTANDO O PROGRAMA ===
+
+Olá, mundo!

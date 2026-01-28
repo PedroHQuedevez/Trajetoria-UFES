@@ -1,0 +1,106 @@
+Strings table:
+
+
+Global symbol table:
+Entry 0 -- name: arr, kind: ARRAY, line: 4, type: integer
+Entry 1 -- name: i, kind: VARIABLE, line: 5, type: integer
+
+
+digraph {
+graph [ordering="out"];
+node0[label="program"];
+node1[label="var_list"];
+node2[label="(integer) arr@"];
+node1 -> node2;
+node3[label="(integer) i@"];
+node1 -> node3;
+node0 -> node1;
+node4[label="block"];
+node5[label="(integer) for"];
+node6[label="(integer) for_heading"];
+node7[label="(integer) i@"];
+node6 -> node7;
+node8[label="(integer)  1"];
+node6 -> node8;
+node9[label="(integer)  10"];
+node6 -> node9;
+node5 -> node6;
+node10[label="for_block"];
+node11[label="(integer) :="];
+node12[label="(integer) array_access"];
+node13[label="(integer) arr@"];
+node12 -> node13;
+node14[label="(integer) i@"];
+node12 -> node14;
+node11 -> node12;
+node15[label="(integer) *"];
+node16[label="(integer) i@"];
+node15 -> node16;
+node17[label="(integer)  2"];
+node15 -> node17;
+node11 -> node15;
+node10 -> node11;
+node5 -> node10;
+node4 -> node5;
+node18[label="write"];
+node19[label="(string) I2S"];
+node20[label="(integer) array_access"];
+node21[label="(integer) arr@"];
+node20 -> node21;
+node22[label="(integer) i@"];
+node20 -> node22;
+node19 -> node20;
+node18 -> node19;
+node4 -> node18;
+node0 -> node4;
+}
+
+=== EXECUTANDO O PROGRAMA ===
+
+20
+
+=== GERANDO CÓDIGO JASMIN ===
+
+Código Jasmin gerado com sucesso em: ../tests/in/valid_06.j
+
+=== CÓDIGO JASMIN GERADO ===
+
+.class public PascalProgram
+.super java/lang/Object
+
+.method public <init>()V
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+.end method
+
+.method public static main([Ljava/lang/String;)V
+  .limit stack 10
+  .limit locals 10
+  iconst_0
+  istore 0
+  iconst_0
+  istore 1
+  iconst_1
+  istore 1
+  bipush 10
+  istore 2
+L0:
+  iload 1
+  iload 2
+  if_icmpgt L1
+  iload 1
+  iconst_2
+  imul
+  iload 1
+  iconst_1
+  iadd
+  istore 1
+  goto L0
+L1:
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  return
+.end method
+

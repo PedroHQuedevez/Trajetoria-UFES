@@ -1,0 +1,99 @@
+Selection Sort:
+Arquivo: ../in/nearly_sorted/1Knearly_sorted.txt 	Tempo: 1 milissegundos
+Arquivo: ../in/nearly_sorted/10Knearly_sorted.txt 	Tempo: 172 milissegundos
+Arquivo: ../in/nearly_sorted/100Knearly_sorted.txt 	Tempo: 17386 milissegundos
+
+Arquivo: ../in/reverse_sorted/1Kreverse_sorted.txt 	Tempo: 1 milissegundos
+Arquivo: ../in/reverse_sorted/10Kreverse_sorted.txt 	Tempo: 167 milissegundos
+Arquivo: ../in/reverse_sorted/100Kreverse_sorted.txt 	Tempo: 16655 milissegundos
+
+Arquivo: ../in/sorted/1Ksorted.txt 			Tempo: 1 milissegundos
+Arquivo: ../in/sorted/10Ksorted.txt 			Tempo: 173 milissegundos
+Arquivo: ../in/sorted/100Ksorted.txt 			Tempo: 17370 milissegundos
+
+Arquivo: ../in/unif_rand/1Kunif_rand.txt 		Tempo: 1 milissegundos
+Arquivo: ../in/unif_rand/10Kunif_rand.txt 		Tempo: 175 milissegundos
+Arquivo: ../in/unif_rand/100Kunif_rand.txt 		Tempo: 17389 milissegundos
+
+//-----------------------------------------------------------------------------------
+
+Insertion Sort:
+Arquivo: ../in/nearly_sorted/1Knearly_sorted.txt 	Tempo: 1 milissegundos
+Arquivo: ../in/nearly_sorted/10Knearly_sorted.txt 	Tempo: 180 milissegundos
+Arquivo: ../in/nearly_sorted/100Knearly_sorted.txt 	Tempo: 18033 milissegundos
+
+Arquivo: ../in/reverse_sorted/1Kreverse_sorted.txt 	Tempo: 2 milissegundos
+Arquivo: ../in/reverse_sorted/10Kreverse_sorted.txt 	Tempo: 276 milissegundos
+Arquivo: ../in/reverse_sorted/100Kreverse_sorted.txt 	Tempo: 27904 milissegundos
+
+Arquivo: ../in/sorted/1Ksorted.txt 			Tempo: 1 milissegundos
+Arquivo: ../in/sorted/10Ksorted.txt 			Tempo: 179 milissegundos
+Arquivo: ../in/sorted/100Ksorted.txt 			Tempo: 18021 milissegundos
+
+Arquivo: ../in/unif_rand/1Kunif_rand.txt 		Tempo: 2 milissegundos
+Arquivo: ../in/unif_rand/10Kunif_rand.txt 		Tempo: 227 milissegundos
+Arquivo: ../in/unif_rand/100Kunif_rand.txt 		Tempo: 23048 milissegundos
+
+//-----------------------------------------------------------------------------------
+
+Bubble Sort:
+Arquivo: ../in/nearly_sorted/1Knearly_sorted.txt 	Tempo: 1 milissegundos
+Arquivo: ../in/nearly_sorted/10Knearly_sorted.txt 	Tempo: 165 milissegundos
+Arquivo: ../in/nearly_sorted/100Knearly_sorted.txt 	Tempo: 16639 milissegundos
+
+Arquivo: ../in/reverse_sorted/1Kreverse_sorted.txt 	Tempo: 3 milissegundos
+Arquivo: ../in/reverse_sorted/10Kreverse_sorted.txt 	Tempo: 289 milissegundos
+Arquivo: ../in/reverse_sorted/100Kreverse_sorted.txt 	Tempo: 29452 milissegundos
+
+Arquivo: ../in/sorted/1Ksorted.txt 			Tempo: 1 milissegundos
+Arquivo: ../in/sorted/10Ksorted.txt 			Tempo: 165 milissegundos
+Arquivo: ../in/sorted/100Ksorted.txt 			Tempo: 16650 milissegundos
+
+Arquivo: ../in/unif_rand/1Kunif_rand.txt 		Tempo: 2 milissegundos
+Arquivo: ../in/unif_rand/10Kunif_rand.txt 		Tempo: 362 milissegundos
+Arquivo: ../in/unif_rand/100Kunif_rand.txt 		Tempo: 43532 milissegundos
+
+//-----------------------------------------------------------------------------------
+
+Shaker Sort:
+Arquivo: ../in/nearly_sorted/1Knearly_sorted.txt 	Tempo: 2 milissegundos
+Arquivo: ../in/nearly_sorted/10Knearly_sorted.txt 	Tempo: 254 milissegundos
+Arquivo: ../in/nearly_sorted/100Knearly_sorted.txt 	Tempo: 25683 milissegundos
+
+Arquivo: ../in/reverse_sorted/1Kreverse_sorted.txt 	Tempo: 3 milissegundos
+Arquivo: ../in/reverse_sorted/10Kreverse_sorted.txt 	Tempo: 368 milissegundos
+Arquivo: ../in/reverse_sorted/100Kreverse_sorted.txt 	Tempo: 36997 milissegundos
+
+Arquivo: ../in/sorted/1Ksorted.txt 			Tempo: 2 milissegundos
+Arquivo: ../in/sorted/10Ksorted.txt 			Tempo: 259 milissegundos
+Arquivo: ../in/sorted/100Ksorted.txt 			Tempo: 25698 milissegundos
+
+Arquivo: ../in/unif_rand/1Kunif_rand.txt 		Tempo: 3 milissegundos
+Arquivo: ../in/unif_rand/10Kunif_rand.txt 		Tempo: 424 milissegundos
+Arquivo: ../in/unif_rand/100Kunif_rand.txt 		Tempo: 44119 milissegundos
+
+//----------------
+
+Para o arquivo nearly_sorted, o algoritmo bubble sort apresentou um melhor desempenho,
+realiza menos trocas pelo fato do vetor estar parcialmente ordenado. O insertion Sort em tese
+deveria rivalizar ou até mesmo ser melhor, mas neste caso em específico isso não ocorreu.
+
+Para o arquivo reversed_sort, o algoritmo selection_sort apresentou um desempenho muito
+superior a todos os outros, isso se da ao fato dele sempre colocar o menor valor na primeira posição
+o que independe da ordenação que se tem inicialmente. Os outros algoritmos realizam muito mais trocas
+neste caso.
+
+Para o arquivo sorted, o algoritmo bubble sort apresentou um melhor desempenho, novamente, ele se aproveita
+da ordenação inicial, assim como o insertion sort.
+
+Para o arquivo com ordenação aleatória podemos ver que os algoritmos que se favorecem da ordenação inicial
+tem um desempenho menor devido ao grande numero de trocas, já o selection sort aparece novamente com sua 
+consistência em tempos de execução independente da ordenação inical, sendo ele o com melhor desempenho.
+
+nearly_sorted: bubble sort.
+reversed_sorted: selection sort.
+sorted: bubble sort.
+ramdom: selection sort.
+
+Os resultados me parecem um pouco diferentes do esperado, isso pode estar relacionado a vários fatores momentâneos
+durante a execução do algoritmo, como uso de CPU e memória talvez.

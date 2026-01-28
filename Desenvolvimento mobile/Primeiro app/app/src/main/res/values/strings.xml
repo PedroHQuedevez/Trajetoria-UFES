@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="salario">Salário (R$)</string>
+    <string name="gastos">Gastos (R$)</string>
+    <string name="dependentes">Dependentes</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">R$ 0</string>
+    <string name="sucesso">Calculo realizado com sucesso</string>
+    <string name="erro">erro ao calcular, verifique as entradas</string>
+
+
+</resources>

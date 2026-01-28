@@ -1,0 +1,20 @@
+ITER    	HEIGHT  	 para 10000 chaves
+	normal  rotate  balance
+0       37	29	13		
+1       30	33	13	
+2       30	30	13	
+3       30	30	13
+4       28	29	13	
+5       31	28	13	
+6       30	27	13
+7       30	28	13
+8       32	38	13
+9       32	28	13      
+AVG     31.0	30.0	13.0	
+STD     2.58	3.67	0.00	
+
+o algoritmo de balanceamento, apesar de aumentar o custo computacional,
+demonstra uma melhora gigantesca na altura final da árvore, reduzindo em
+mais da metade em todos os casos analisados.
+Essa modificação pode nos garantir uma melhora significativa, caso precisemos
+realizar uma quantidade grande de buscas na árvore por exemplo.

@@ -1,0 +1,24 @@
+ITER    HEIGHT  para 10000 chaves
+	normal  rotate
+0       32	32
+1       28	28
+2       31	29
+3       33	30
+4       30	29
+5       32	28
+6       31	31
+7       31	31
+8       29	27
+9       29      33
+AVG     30.6	29.8
+STD     1.58	1.93
+
+A inserção com rotação resultou em uma altura média um pouco 
+menor 29.8 x 30.6, sugerindo uma leve melhora na balanceamento da árvore.
+
+O desvio padrão da inserção com rotação 1.93 é um pouco maior que o da 
+inserção normal 1.58, indicando que a altura varia um pouco mais.
+
+Isso mostra que a rotação pode ajudar a manter a altura mais baixa 
+em alguns casos, mas pode gerar variações dependendo da ordem de inserção dos elementos
+como na iteração 9 onde a altura da árvore foi maior na com rotação.

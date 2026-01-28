@@ -1,0 +1,75 @@
+Strings table:
+
+
+Global symbol table:
+Entry 0 -- name: arr, kind: ARRAY, line: 4, type: integer
+Entry 1 -- name: i, kind: VARIABLE, line: 5, type: integer
+
+
+digraph {
+graph [ordering="out"];
+node0[label="program"];
+node1[label="var_list"];
+node2[label="(integer) arr@"];
+node1 -> node2;
+node3[label="(integer) i@"];
+node1 -> node3;
+node0 -> node1;
+node4[label="block"];
+node5[label="(integer) :="];
+node6[label="(integer) array_access"];
+node7[label="(integer) arr@"];
+node6 -> node7;
+node8[label="(integer)  1"];
+node6 -> node8;
+node5 -> node6;
+node9[label="(integer)  20"];
+node5 -> node9;
+node4 -> node5;
+node10[label="(integer) :="];
+node11[label="(integer) array_access"];
+node12[label="(integer) arr@"];
+node11 -> node12;
+node13[label="(integer)  2"];
+node11 -> node13;
+node10 -> node11;
+node14[label="(integer)  30"];
+node10 -> node14;
+node4 -> node10;
+node15[label="(integer) for"];
+node16[label="(integer) for_heading"];
+node17[label="(integer) i@"];
+node16 -> node17;
+node18[label="(integer)  1"];
+node16 -> node18;
+node19[label="(integer)  10"];
+node16 -> node19;
+node15 -> node16;
+node20[label="for_block"];
+node21[label="write"];
+node22[label="(string) I2S"];
+node23[label="(integer) array_access"];
+node24[label="(integer) arr@"];
+node23 -> node24;
+node25[label="(integer) i@"];
+node23 -> node25;
+node22 -> node23;
+node21 -> node22;
+node20 -> node21;
+node15 -> node20;
+node4 -> node15;
+node0 -> node4;
+}
+
+=== EXECUTANDO O PROGRAMA ===
+
+20
+30
+0
+0
+0
+0
+0
+0
+0
+0

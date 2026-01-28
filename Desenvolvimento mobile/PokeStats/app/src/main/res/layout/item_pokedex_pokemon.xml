@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#FFF0EE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- Imagem do Pokémon -->
+        <ImageView
+            android:id="@+id/pokemonImage"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/pokebola"
+            android:contentDescription="Imagem do Pokémon"
+            android:scaleType="fitCenter" />
+
+        <!-- Nome do Pokémon -->
+        <TextView
+            android:id="@+id/pokemonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Pikachu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <!-- ID do Pokémon -->
+        <TextView
+            android:id="@+id/pokemonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="#025"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#8B4035"
+            android:alpha="0.8" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

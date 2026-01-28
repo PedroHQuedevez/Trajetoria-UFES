@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">PokeStats</string>
+
+    <!-- Home Fragment -->
+    <string name="hint_pokemon_name">Nome do Pokémon</string>
+    <string name="btn_search">Buscar</string>
+    <string name="error_empty_name">Digite um nome</string>
+    <string name="error_pokemon_not_found">Pokémon não encontrado</string>
+
+    <!-- Pokemon Detail -->
+    <string name="label_hp">HP:</string>
+    <string name="label_attack">Ataque:</string>
+    <string name="label_defense">Defesa:</string>
+    <string name="label_special_attack">Atq. Esp.:</string>
+    <string name="label_special_defense">Def. Esp.:</string>
+    <string name="label_speed">Velocidade:</string>
+    <string name="btn_back">Voltar</string>
+    <string name="btn_add_favorite">Adicionar aos Favoritos</string>
+    <string name="btn_remove_favorite">Remover dos Favoritos</string>
+    <string name="pokemon_id_format">#%03d</string>
+
+    <!-- Favorites Fragment -->
+    <string name="favorites_title">Favoritos</string>
+    <string name="favorites_empty">Nenhum Pokémon favorito ainda</string>
+    <string name="favorites_in_development">Favoritos\n(Em desenvolvimento)</string>
+    <string name="added_to_favorites">%s adicionado aos favoritos!</string>
+    <string name="removed_from_favorites">%s removido dos favoritos!</string>
+    <string name="confirm_remove_favorite_title">Remover Favorito</string>
+    <string name="confirm_remove_favorite_message">Deseja remover %s dos favoritos?</string>
+    <string name="btn_confirm">Confirmar</string>
+    <string name="btn_cancel">Cancelar</string>
+
+    <!-- Pokedex Fragment -->
+    <string name="pokedex_title">Pokédex</string>
+    <string name="pokedex_in_development">Pokédex\n(Em desenvolvimento)</string>
+    <string name="btn_previous">Anterior</string>
+    <string name="btn_next">Próximo</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Buscar</string>
+    <string name="nav_pokedex">Pokédex</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="btn_logout">Sair</string>
+    <string name="logout_confirmation">Deseja realmente sair?</string>
+    <string name="logout_success">Logout realizado com sucesso</string>
+
+    <!-- Login -->
+    <string name="login_title">Bem-vindo</string>
+    <string name="login_subtitle">Entre para continuar sua jornada</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Senha</string>
+    <string name="forgot_password">Esqueci a senha</string>
+    <string name="login_button">Entrar</string>
+    <string name="no_account">Não tem uma conta?</string>
+    <string name="register_button">Cadastrar</string>
+
+    <!-- Register -->
+    <string name="register_title">Criar Conta</string>
+    <string name="register_subtitle">Junte-se à comunidade Pokémon</string>
+    <string name="name_hint">Nome</string>
+    <string name="confirm_password_hint">Confirmar Senha</string>
+    <string name="has_account">Já tem uma conta?</string>
+    <string name="login_link">Fazer login</string>
+    <string name="back">Voltar</string>
+
+    <!-- Validation Messages -->
+    <string name="error_empty_field">Este campo é obrigatório</string>
+    <string name="error_invalid_email">Email inválido</string>
+    <string name="error_password_mismatch">As senhas não coincidem</string>
+    <string name="error_short_password">A senha deve ter pelo menos 6 caracteres</string>
+    <string name="success_register">Conta criada com sucesso!</string>
+    <string name="error_register">Erro ao criar conta</string>
+    <string name="error_login">Email ou senha incorretos</string>
+
+    <!-- Firebase Error Messages -->
+    <string name="error_register_generic">Houve algum problema no cadastro</string>
+    <string name="error_invalid_credentials">Digite um email válido</string>
+    <string name="error_weak_password">Digite uma senha com no mínimo 6 caracteres</string>
+    <string name="error_user_collision">Este e-mail já foi cadastrado</string>
+    <string name="error_network">Falha ao conectar com a internet</string>
+</resources>

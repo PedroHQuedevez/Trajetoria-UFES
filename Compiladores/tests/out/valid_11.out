@@ -1,0 +1,58 @@
+Strings table:
+
+
+Global symbol table:
+Entry 0 -- name: i, kind: VARIABLE, line: 3, type: integer
+Entry 1 -- name: soma, kind: VARIABLE, line: 3, type: integer
+
+
+digraph {
+graph [ordering="out"];
+node0[label="program"];
+node1[label="var_list"];
+node2[label="(integer) i@"];
+node1 -> node2;
+node3[label="(integer) soma@"];
+node1 -> node3;
+node0 -> node1;
+node4[label="block"];
+node5[label="(integer) :="];
+node6[label="(integer) soma@"];
+node5 -> node6;
+node7[label="(integer)  0"];
+node5 -> node7;
+node4 -> node5;
+node8[label="(integer) for"];
+node9[label="(integer) for_heading"];
+node10[label="(integer) i@"];
+node9 -> node10;
+node11[label="(integer)  1"];
+node9 -> node11;
+node12[label="(integer)  5"];
+node9 -> node12;
+node8 -> node9;
+node13[label="for_block"];
+node14[label="(integer) :="];
+node15[label="(integer) soma@"];
+node14 -> node15;
+node16[label="(integer) +"];
+node17[label="(integer) soma@"];
+node16 -> node17;
+node18[label="(integer) i@"];
+node16 -> node18;
+node14 -> node16;
+node13 -> node14;
+node8 -> node13;
+node4 -> node8;
+node19[label="write"];
+node20[label="(string) I2S"];
+node21[label="(integer) soma@"];
+node20 -> node21;
+node19 -> node20;
+node4 -> node19;
+node0 -> node4;
+}
+
+=== EXECUTANDO O PROGRAMA ===
+
+15

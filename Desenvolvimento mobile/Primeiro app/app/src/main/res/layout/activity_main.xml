@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+
+    >
+
+        <EditText
+            android:id="@+id/salario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/salario"
+            android:layout_marginTop="12dp"
+            />
+
+        <TextView
+        android:id="@+id/textsalario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salário mensal"
+            />
+
+        <EditText
+            android:id ="@+id/gastos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/gastos"
+            android:layout_marginTop="12dp"
+            />
+
+        <TextView
+        android:id="@+id/textgastos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gastos com saúde e educação"
+            />
+
+        <EditText
+            android:id = "@+id/dependentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/dependentes"
+            android:layout_marginTop="12dp"
+            />
+
+        <TextView
+            android:id="@+id/textdependentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N de dependentes"
+            android:textStyle=""
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="SEU IMPOSTO DE RENDA MENSAL:"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:text="@string/resultado"/>
+
+
+        <Button
+            android:id = "@+id/calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:backgroundTint="@color/green"
+            android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

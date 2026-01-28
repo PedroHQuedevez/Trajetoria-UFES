@@ -1,0 +1,22 @@
+ITER    	HEIGHT  	 para 10000 chaves
+	randon  ordered  
+0       94	122			
+1       961	458		
+2       36	22		
+3       1183	18	
+4       24	20		
+5       399	142		
+6       24	17	
+7       53	70	
+8       127	60	
+9       302	40	      
+AVG     320.3	96.9			
+STD     397.20	127.48			
+
+o método de inserção aleatória nos da uma saída caótica, as vezes se degeram
+um pouco como na iteração 3 de números aleatórios, como bons resultados também
+na iteração 3 com altura 18.
+Alguns resultados foram melhores que os dos exercícios prévios (ignorando o uso 
+da função balance no ex2) o que nos mostra que se existir uma forma de reproduzir
+a aleatorieade desses casos (deixando de ser completamente aleatório) esse metódo
+poderia ser interessante, com resultados melhores que a média dos outros exercícios.

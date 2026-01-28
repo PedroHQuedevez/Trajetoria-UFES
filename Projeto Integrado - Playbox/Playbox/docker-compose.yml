@@ -1,0 +1,53 @@
+version: '3.3'
+
+services:
+  # Backend (API)
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: playbox-backend-dev
+    restart: unless-stopped      # Reinicia automaticamente se parar
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      JWT_SECRET: ${JWT_SECRET}
+      SERVER_PORT: ${SERVER_PORT}
+    ports:
+      - "5000:${SERVER_PORT:-5000}"   # Mapeia porta 5000 do host para SERVER_PORT do container
+    volumes:
+      - ./server:/app            # Sincroniza código local com container (hot reload)
+      - /app/node_modules        # Evita conflitos entre node_modules local e do container
+    networks:
+      - playbox-network          # Conecta à rede personalizada
+    command: npm start
+
+  # Frontend (React)
+  frontend:
+    build:
+      context: ./client 
+      dockerfile: Dockerfile
+    container_name: playbox-frontend-dev
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - REACT_APP_API_URL=${REACT_APP_API_URL}
+      - CHOKIDAR_USEPOLLING=true               # Habilita polling para hot reload em alguns sistemas
+      - WATCHPACK_POLLING=true                 # Habilita polling para webpack em alguns sistemas
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend                  # Garante que o backend inicie antes do frontend
+    volumes:
+      - ./client:/app            # Sincroniza código local com container
+      - /app/node_modules        # Evita conflitos entre node_modules local e do container
+    networks:
+      - playbox-network          # Conecta à rede personalizada
+    stdin_open: true
+    tty: true
+
+networks:
+  playbox-network:
+    driver: bridge               # Cria uma rede bridge personalizada para comunicação entre containers

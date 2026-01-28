@@ -1,0 +1,7 @@
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "org.antlr.v4.runtime.tree.ParseTree.accept(org.antlr.v4.runtime.tree.ParseTreeVisitor)" because "tree" is null
+	at org.antlr.v4.runtime.tree.AbstractParseTreeVisitor.visit(AbstractParseTreeVisitor.java:18)
+	at checker.PascalSemanticChecker.visitProgram(PascalSemanticChecker.java:113)
+	at checker.PascalSemanticChecker.visitProgram(PascalSemanticChecker.java:62)
+	at parser.PascalParser$ProgramContext.accept(PascalParser.java:155)
+	at org.antlr.v4.runtime.tree.AbstractParseTreeVisitor.visit(AbstractParseTreeVisitor.java:18)
+	at Main.main(Main.java:32)

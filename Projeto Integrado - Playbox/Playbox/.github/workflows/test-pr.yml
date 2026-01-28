@@ -1,0 +1,63 @@
+name: Testes em Pull Request
+
+on:
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - 'server/**'
+
+jobs:
+  test-backend:
+    name: Testes Backend (PR)
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout código 
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: server/package-lock.json
+      
+      - name: Instalar dependências
+        working-directory: ./server
+        run: npm ci
+      
+      - name: Executar linting (se configurado)
+        working-directory: ./server
+        run: |
+          if npm run lint --if-present; then
+            echo "Linting passou"
+          else
+            echo "Linting não configurado ou falhou"
+          fi
+        continue-on-error: true
+      
+      - name: Executar testes
+        working-directory: ./server
+        run: npm test
+        env:
+          NODE_ENV: test
+      
+      - name: Executar testes com cobertura
+        working-directory: ./server
+        run: npm test -- --coverage --watchAll=false
+      
+      - name: Comentar resultado dos testes no PR
+        uses: actions/github-script@v7
+        if: always()
+        with:
+          script: |
+            const { context } = require('@actions/github');
+            const jobStatus = '${{ job.status }}';
+            const message = `${emoji} **Testes Backend**: ${jobStatus === 'success' ? 'Todos os testes passaram!' : 'Alguns testes falharam'}`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            });

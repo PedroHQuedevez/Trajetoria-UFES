@@ -1,0 +1,55 @@
+Strings table:
+
+
+Global symbol table:
+Entry 0 -- name: dez, kind: VARIABLE, line: 4, type: integer
+Entry 1 -- name: GetDez, kind: FUNCTION, line: 6, type: integer
+  Params: 
+  Local variables:
+    GetDez : integer
+
+
+digraph {
+graph [ordering="out"];
+node0[label="program"];
+node1[label="var_list"];
+node2[label="(integer) dez@"];
+node1 -> node2;
+node0 -> node1;
+node3[label="function_sect"];
+node4[label="(integer) function_decl"];
+node5[label="(integer) function_heading"];
+node6[label="(integer) GetDez@"];
+node5 -> node6;
+node4 -> node5;
+node7[label="function_block"];
+node8[label="(integer) :="];
+node9[label="(integer) GetDez@"];
+node8 -> node9;
+node10[label="(integer)  10"];
+node8 -> node10;
+node7 -> node8;
+node4 -> node7;
+node3 -> node4;
+node0 -> node3;
+node11[label="block"];
+node12[label="(integer) :="];
+node13[label="(integer) dez@"];
+node12 -> node13;
+node14[label="(integer) function_call"];
+node15[label="(integer) GetDez@"];
+node14 -> node15;
+node12 -> node14;
+node11 -> node12;
+node16[label="write"];
+node17[label="(string) I2S"];
+node18[label="(integer) dez@"];
+node17 -> node18;
+node16 -> node17;
+node11 -> node16;
+node0 -> node11;
+}
+
+=== EXECUTANDO O PROGRAMA ===
+
+10

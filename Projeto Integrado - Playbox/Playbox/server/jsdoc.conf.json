@@ -1,0 +1,29 @@
+{
+  "source": {
+    "include": [
+      "./",
+      "./services/",
+      "./routes/"
+    ],
+    "includePattern": "\\.(js|jsx)$",
+    "exclude": [
+      "node_modules/",
+      "__tests__/",
+      "prisma/",
+      "docs/"
+    ]
+  },
+  "opts": {
+    "destination": "./docs/",
+    "recurse": true,
+    "readme": "./STRUCTURE.md"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "metadata": {
+    "title": "API Playbox - Documentação do Backend"
+  }
+}

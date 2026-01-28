@@ -1,0 +1,119 @@
+
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 13 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 149 milissegundos
+
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 10 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 128 milissegundos
+
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 2 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 24 milissegundos
+
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 2 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 26 milissegundos
+
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 12 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 143 milissegundos
+
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 14 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 162 milissegundos
+
+Arquivo: ../input/nearly_sorted/100000.txt Tempo: 6 milissegundos
+Arquivo: ../input/nearly_sorted/1000000.txt Tempo: 68 milissegundos
+
+Para o nearly_sorted temos que as versões 3 e 4 com merge skip e insertion sort 
+apresentaram um melhor desempenho em relação as demais, elas se aproveitam do 
+insertion sort para ordenar a partir de um certo ponto onde o insertion possui um 
+desempenho melhor que o merge e também de uma verificação para verificar se o merge
+é necessário em cada iteração.
+
+//----------------------------------------------------------------------
+
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 13 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 153 milissegundos
+
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 11 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 139 milissegundos
+
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 13 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 155 milissegundos
+
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 11 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 140 milissegundos
+
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 12 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 145 milissegundos
+
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 16 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 182 milissegundos
+
+Arquivo: ../input/reverse_sorted/100000.txt Tempo: 16 milissegundos
+Arquivo: ../input/reverse_sorted/1000000.txt Tempo: 181 milissegundos
+
+Para o reverse temos que todas as versões apresentaram um desempenho parecido,
+considerando a ordenação inversa, todos irão fazer um grande número de trocas
+e suas melhorias como cutoff e mergeskip não fazem diferença.
+
+//----------------------------------------------------------------------
+
+Arquivo: ../input/sorted/100000.txt Tempo: 12 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 148 milissegundos
+
+Arquivo: ../input/sorted/100000.txt Tempo: 10 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 126 milissegundos
+
+Arquivo: ../input/sorted/100000.txt Tempo: 1 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 10 milissegundos
+
+Arquivo: ../input/sorted/100000.txt Tempo: 1 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 14 milissegundos
+
+Arquivo: ../input/sorted/100000.txt Tempo: 12 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 140 milissegundos
+
+Arquivo: ../input/sorted/100000.txt Tempo: 14 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 161 milissegundos
+
+Arquivo: ../input/sorted/100000.txt Tempo: 5 milissegundos
+Arquivo: ../input/sorted/1000000.txt Tempo: 56 milissegundos
+
+Para o arquivo sorted temos que novamente as versões 3 e 4 apresentaram
+um desempenho melhor, se aproveitando do insertion sort para e principalmente
+do merge skip para melhorar seu tempo de execução, basicamente pulando todos
+os merges já que está ordenado.
+
+//----------------------------------------------------------------------
+
+Arquivo: ../input/unif_rand/100000.txt Tempo: 25 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 302 milissegundos
+
+Arquivo: ../input/unif_rand/100000.txt Tempo: 23 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 280 milissegundos
+
+Arquivo: ../input/unif_rand/100000.txt Tempo: 24 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 293 milissegundos
+
+Arquivo: ../input/unif_rand/100000.txt Tempo: 23 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 281 milissegundos
+
+Arquivo: ../input/unif_rand/100000.txt Tempo: 24 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 291 milissegundos
+
+Arquivo: ../input/unif_rand/100000.txt Tempo: 26 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 314 milissegundos
+
+Arquivo: ../input/unif_rand/100000.txt Tempo: 26 milissegundos
+Arquivo: ../input/unif_rand/1000000.txt Tempo: 313 milissegundos
+
+
+Para o unif_rand temos novamente que os tempos de execução de cada versão
+são bem parecidos, as otimizações não causaram grande impacto e a quantidade
+de trocas e merges provavelmente foram parecidas em todos os casos.
+//----------------------------------------------------------------------
+
+
+
+
+
+
+
+
