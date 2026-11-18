@@ -1,0 +1,14 @@
+id,real_estate_type,municipality,neighbourhood,size,rooms,bathrooms,garage_spaces,has_condominio
+1,casa,Serra,Manguinhos,120,3,2,2,1
+2,casa,Serra,Morada de Laranjeiras,127.65,3,2,2,0
+3,apartamento,Vila Velha,Praia da Costa,95,2,2,1,1
+4,apartamento,Vila Velha,Praia da Costa,56,2,2,1,1
+5,casa,Cariacica,Campo Grande,560,4,3,3,0
+6,apartamento,Vitória,Bento Ferreira,90,3,2,1,1
+7,apartamento,Vitória,Jardim da Penha,70,3,2,1,1
+8,casa,Vitória,Mata da Praia,90,2,2,1,1
+9,apartamento,Cariacica,São Geraldo,66.6,2,1,1,1
+10,casa,Vitória,Mata da Praia,330.73,4,5,4,0
+11,apartamento,Guarapari,Praia do Morro,117,3,2,1,1
+12,casa,Serra,Jacaraípe,100,3,2,1,0
+13,casa,Serra,Jacuhy,285,4,4,1,1
